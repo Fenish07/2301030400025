@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingvist - Learn Languages While Having Fun!</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0c65f, #725c2d);
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif;
+        }
+        .header {
+            background: #4a2f11;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #333;
+            padding: 10px 0;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            transition: 0.3s;
+        }
+        .nav-bar a:hover {
+            background: white;
+            color: #4a2f11;
+            border-radius: 5px;
+        }
+        .membership-container {
+            background: #b2a375;
+            padding: 20px;
+            width: 60%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .membership-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            padding: 15px 0;
+        }
+        .membership-content {
+            background: #d9d5a8;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .membership-container h2 {
+            color: #2a1f0d;
+        }
+        .membership-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .membership-container ul li {
+            margin-bottom: 10px;
+        }
+        .fadeIn {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="DALL·E 2025-03-14 18.03.08 - A digital vector logo featuring a neon yellow line-art illustration of a person wearing headphones and using a laptop. The person should have a smilin.webp" alt="Lingvist Logo" width="50
+        ">
+        <p>Learn Language while having Fun</p>
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Course</a>
+            <a href="#">Profile</a>
+            <a href="#">Challenges</a>
+        </div>
+    </div>
+    <div class="membership-container fadeIn">
+        <div class="membership-title">
+            <h2>Membership Plan</h2>
+        </div>
+        <div class="membership-container">
+            <h3>1. Free Membership:</h3>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Access to Beginner-Level Courses: Limited access to introductory lessons for basic programming languages (e.g., Python, JavaScript).</li>
+                <li>Progress Tracker: Track progress in learning with milestones.</li>
+                <li>Limited Challenges: Up to 5 coding challenges per week.</li>
+            </ul>
+        </div>
+        <div class="membership-container">
+            <h3>2. Premium Membership: (Monthly $21 or Annual $220)</h3>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Full access to all courses from Beginner to Advanced levels.</li>
+                <li>Unlimited Challenges: No limit on coding challenges.</li>
+                <li>Advanced Coding Challenges: Simulated real-world problems.</li>
+                <li>Personalized Learning Paths based on performance.</li>
+                <li>24/7 customer support for quick responses.</li>
+                <li>Access to exclusive tutorials, advanced coding topics, and more.</li>
+                <li>Earn Achievements & Badges for milestones.</li>
+                <li>Compete in coding competitions with rewards.</li>
+                <li>Downloadable resources including cheat sheets and additional materials.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.membership-container').style.opacity = '1';
+        });
+    </script>
+</body>
+</html>

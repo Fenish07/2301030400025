@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #b5a66d, #807f2e);
+            text-align: center;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-section {
+            width: 50%;
+            text-align: center;
+            padding: 20px;
+        }
+        .levels {
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+        }
+        .level {
+            background: #e6e6e6;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 20px;
+            color: black;
+            font-weight: bold;
+            width: 80px;
+            text-align: center;
+        }
+        .highlight { color: orange; }
+        .current { color: darkred; font-weight: bold; }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-info input {
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+        }
+        .logout {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .logout img {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="DALL·E 2025-03-14 18.03.08 - A digital vector logo featuring a neon yellow line-art illustration of a person wearing headphones and using a laptop. The person should have a smilin.webp" alt="Lingvist Logo" width="50
+            ">
+        </div>
+        <h1>Learn Language while having Fun</h1>
+    </div>
+    
+    <div class="container">
+        <div class="levels">
+            <h2>Levels</h2>
+            <div class="level current">05</div>
+            <div class="level">06</div>
+            <div class="level">07</div>
+            <div class="current">08</div>
+        </div>
+        
+        <div class="profile-info fadeIn">
+            <img class="profile-pic" src="" alt="Profile Picture" width="100">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Mobile">
+        </div>
+    </div>
+    
+    <a href="wel.html" class="logout">
+        <img src="icons8-log-out-50.png" alt="Log Out" width="10">
+        Log out
+    </a>
+    
+    <footer>
+        <p>Contact us : 2301030400025@silveroakuni.ac.in</p>
+    </footer>
+</body>
+</html>

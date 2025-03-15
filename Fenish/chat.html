@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat With Experts </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e0c65f, #a89d6e);
+            text-align: center;
+        }
+        .header {
+            background-color: #2d1b07;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .expert-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .expert-box {
+            width: 200px;
+            background: white;
+            padding: 10px;
+            border-radius: 15px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .expert-box:hover {
+            transform: scale(1.1);
+        }
+        .question-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+        }
+        .ask-input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .ask-input:focus {
+            border: 2px solid #f5a623;
+            outline: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="DALL·E 2025-03-14 18.03.08 - A digital vector logo featuring a neon yellow line-art illustration of a person wearing headphones and using a laptop. The person should have a smilin.webp" alt="Lingvist Logo" width="50
+        ">
+        <div>Learn Language while having Fun</div>
+    </div>
+
+    <h2 style="text-align:center; font-weight: bold;">Questions To Expert</h2>
+    <div class="expert-container">
+        <div class="expert-box" style="background-color: #f4e4cf; border-left: 5px solid #a83232;">Alakh Pandey<br><span>Python Expert</span></div>
+        <div class="expert-box" style="background-color: #a8e6cf;">Harsha<br>Java Expert</div>
+        <div class="expert-box" style="background-color: #b2dfdb;">Akshay Miterani<br>C & C++ Expert</div>
+        <div class="expert-box" style="background-color: #d8bfd8;">Rohit Sharma<br>Ruby</div>
+    </div>
+
+    <div class="question-container">
+        <input type="text" class="ask-input" placeholder="Ask Questions">
+    </div>
+</body>
+</html>

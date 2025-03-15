@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingvist - Learn Languages While Having Fun!</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0c65f, #a89d6e);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #4a2f11;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        .nav-bar a:hover {
+            background: white;
+            color: #4a2f11;
+            border-radius: 5px;
+        }
+        .fadeIn {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .events-container {
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+            background: #aba07a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .event-item {
+            display: inline-block;
+            width: 40%;
+            background: #7851a9;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+        }
+        .event-item::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            margin-left: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #7851a9 transparent transparent transparent;
+        }
+        .event-date {
+            font-size: 14px;
+            color: #ddd;
+        }
+        .event-divider {
+            display: inline-block;
+            width: 10%;
+            vertical-align: middle;
+            border-left: 3px solid #4a2f11;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="DALL·E 2025-03-14 18.03.08 - A digital vector logo featuring a neon yellow line-art illustration of a person wearing headphones and using a laptop. The person should have a smilin.webp" alt="Lingvist Logo" width="50
+        ">
+        <div>Learn Languages While Having Fun!</div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#">Course</a>
+        <a href="#">Profile</a>
+        <a href="#">Challenges</a>
+    </div>
+
+    <div class="events-section fadeIn">
+        <h2 style="text-align: center; color: white;">Events</h2>
+        <div class="event-item">
+            <p><strong>Scholarship Test</strong><br>100 Marks<br>26 Jan 2025</p>
+            <div class="event-divider"></div>
+        </div>
+        <div class="event-item">
+            <p><strong>Gate Exam</strong><br>40 Marks<br>3 Feb 2025</p>
+        </div>
+    </div>
+    
+    <div class="quiz-container fadeIn">
+        <h2>Quiz</h2>
+        <div class="quiz-question">
+            <p>What is the correct syntax to declare a pointer in C?</p>
+            <ul>
+                <li>a) int pointer;</li>
+                <li>b) int *pointer;</li>
+                <li>c) pointer int;</li>
+                <li>d) pointer *int</li>
+            </ul>
+        </div>
+        <div class="quiz-question">
+            <p>What is the default value of a static variable in C?</p>
+            <ul>
+                <li>a) 0</li>
+                <li>b) 1</li>
+                <li>c) NULL</li>
+                <li>d) Undefined</li>
+            </ul>
+        </div>
+        <div class="quiz-question">
+            <p>What is the purpose of the finally block in Java?</p>
+            <ul>
+                <li>a) It is used to execute code after the try block executes successfully</li>
+                <li>b) It is used for exception handling only</li>
+                <li>c) It ensures execution of code regardless of an exception</li>
+                <li>d) It prevents any errors in the program</li>
+            </ul>
+        </div>
+        <div class="quiz-question">
+            <p>What does the super() keyword do in Java?</p>
+            <ul>
+                <li>a) Calls the parent class constructor</li>
+                <li>b) Calls the method of the child class</li>
+                <li>c) Refers to the superclass variables</li>
+                <li>d) Refers to the subclass constructor</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
